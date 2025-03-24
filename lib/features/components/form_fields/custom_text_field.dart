@@ -72,8 +72,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
                           const EdgeInsets.only(bottom: 8, left: 8, right: 8),
                       child: AppIcon(
                         icon: showPassword
-                            ? AppIconConstants.eyeClosed
-                            : AppIconConstants.eye,
+                            ? AppIconConstants.eye
+                            : AppIconConstants.eyeClosed,
                         color: Palette.orange00,
                         size: 24,
                       ),

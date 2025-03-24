@@ -38,6 +38,7 @@ dependencies:
   auto_route: ^10.0.1
   gap: ^3.0.1
   flutter_form_builder: ^10.0.1
+  flutter_bloc: ^9.1.0
 
 dev_dependencies:
   flutter_test:

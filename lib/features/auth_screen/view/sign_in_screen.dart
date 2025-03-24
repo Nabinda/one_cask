@@ -1,6 +1,8 @@
 import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:pixelfield/app_routes/app_routes.gr.dart';
 import 'package:pixelfield/features/components/buttons/custom_filled_button.dart';
 import 'package:pixelfield/features/components/form_fields/custom_text_field.dart';
 import 'package:pixelfield/theme/app_text_style.dart';
@@ -45,7 +47,11 @@ class SignInScreen extends StatelessWidget {
                 keyboardType: TextInputType.emailAddress,
               ),
               Gap(40),
-              CustomFilledButton(label: 'Continue', onTap: () {}),
+              CustomFilledButton(
+                  label: 'Continue',
+                  onTap: () {
+                    context.router.replaceAll([DashboardScreen()]);
+                  }),
               Gap(40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
