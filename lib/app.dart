@@ -17,7 +17,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'One Cask at a Time',
       routerConfig: router.config(),
-      theme: ThemeData(scaffoldBackgroundColor: Palette.darkGreen19),
+      theme: ThemeData(
+          scaffoldBackgroundColor: Palette.darkGreen19,
+          textSelectionTheme: TextSelectionThemeData(
+              cursorColor: Palette.orange00,
+              selectionColor: Palette.orange00,
+              selectionHandleColor: Palette.orange00)),
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         return ScrollConfiguration(
