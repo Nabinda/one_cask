@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 extension TextStyleFigma on TextStyle {
   TextStyle withLineHeight(double fontSize, double lineHeight) {
     final heightFactor = lineHeight / fontSize;
     return copyWith(
-      fontSize: fontSize,
+      fontSize: fontSize.sp,
       height: heightFactor,
     );
   }

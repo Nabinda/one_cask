@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppIcon extends StatelessWidget {
   final String icon;
@@ -27,8 +28,8 @@ class AppIcon extends StatelessWidget {
       icon,
       color: color,
       colorBlendMode: colorBlendMode,
-      height: (size ?? height),
-      width: (size ?? width),
+      height: (size ?? height)?.sp,
+      width: (size ?? width)?.sp,
     );
   }
 }

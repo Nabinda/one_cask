@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pixelfield/app_routes/app_routes.gr.dart';
 
 @RoutePage()
@@ -38,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Center(
             child: Image.asset(
               'assets/logo/logo.png',
-              height: 140,
+              height: 140.h,
             ),
           ),
         ),

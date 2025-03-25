@@ -1,6 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:pixelfield/app_routes/app_routes.gr.dart';
 import 'package:pixelfield/features/components/buttons/custom_filled_button.dart';
@@ -21,38 +22,38 @@ class SignInScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Palette.darkGreen21,
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16).r,
           child: SafeArea(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Gap(96),
+              Gap(96.h),
               Text(
                 'Sign in',
                 style: AppTextStyle.headlineLarge
                     .copyWith(color: Palette.greyEA)
                     .garamondFont,
               ),
-              Gap(32),
+              Gap(32.h),
               CustomTextField(
                 labelText: 'Email',
                 controller: TextEditingController(),
                 keyboardType: TextInputType.emailAddress,
               ),
-              Gap(24),
+              Gap(24.h),
               CustomTextField(
                 labelText: 'Password',
                 isPassword: true,
                 controller: TextEditingController(),
                 keyboardType: TextInputType.emailAddress,
               ),
-              Gap(40),
+              Gap(40.h),
               CustomFilledButton(
                   label: 'Continue',
                   onTap: () {
                     context.router.replaceAll([DashboardScreen()]);
                   }),
-              Gap(40),
+              Gap(40.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -61,10 +62,11 @@ class SignInScreen extends StatelessWidget {
                     style:
                         AppTextStyle.lato16400.copyWith(color: Palette.greyBF),
                   ),
-                  Gap(8),
+                  Gap(8.w),
                   Padding(
                     padding:
-                        const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                        const EdgeInsets.symmetric(vertical: 8, horizontal: 16)
+                            .r,
                     child: Text(
                       'Recover password',
                       style: AppTextStyle.buttonLarge
