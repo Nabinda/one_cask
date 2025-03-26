@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Johnnie Walker Blue Label",
+      "age": 25,
+      "code": "1001",
+      "bottle_number": "135/184",
+      "image_url": "https://www.thewhiskyexchange.com/media/11245.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Macallan 18 Years Old",
+      "age": 18,
+      "code": "1002",
+      "bottle_number": "90/250",
+      "image_url": "https://www.thewhiskyexchange.com/media/11246.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hennessy XO",
+      "age": 15,
+      "code": "1003",
+      "bottle_number": "50/200",
+      "image_url": "https://www.thewhiskyexchange.com/media/11247.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Grey Goose Vodka",
+      "age": 0,
+      "code": "1004",
+      "bottle_number": "210/500",
+      "image_url": "https://www.thewhiskyexchange.com/media/11248.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Patrón Silver Tequila",
+      "age": 0,
+      "code": "1005",
+      "bottle_number": "75/300",
+      "image_url": "https://www.thewhiskyexchange.com/media/11249.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Château Margaux 2005",
+      "age": 19,
+      "code": "1006",
+      "bottle_number": "45/150",
+      "image_url": "https://img.thewhiskyexchange.com/1400/ggtfc.1973.jpg"
+    }
+  ]
+  
